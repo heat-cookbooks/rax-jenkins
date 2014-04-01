@@ -1,4 +1,5 @@
 rax-jenkins
 ===========
 
-Jenkins wrapper cookbook
+Wrapper cookbook to setup `jenkins-cli` and install any necessary Jenkins
+plugins.
