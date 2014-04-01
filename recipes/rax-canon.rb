@@ -19,7 +19,7 @@
 
 # Install Rackspace Canon Jenkins Theme
 if node['rax']['jenkins']['install_theme']
-  template File.join(node['jenkins']['server']['home'], 'org.codefirst.SimpleThemeDecorator.xml') do
+  template File.join(node['jenkins']['master']['home'], 'org.codefirst.SimpleThemeDecorator.xml') do
     source 'org.codefirst.SimpleThemeDecorator.xml'
     mode 0644
     owner node['jenkins']['master']['user']
